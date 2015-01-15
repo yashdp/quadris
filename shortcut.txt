@@ -1,0 +1,74 @@
+up up
+u up
+
+left left
+l left
+le left
+lef left
+right right
+ri right
+rig right
+righ right
+
+down down
+do down
+dow down
+
+clockwise clockwise
+cw clockwise
+cl clockwise
+clo clockwise
+cloc clockwise
+clock clockwise
+clockw clockwise
+clockwi clockwise
+clockwis clockwise
+
+counterclockwise counterclockwise
+ccw counterclockwise
+co counterclockwise
+cou counterclockwise
+coun counterclockwise
+count counterclockwise
+counte counterclockwise
+counter counterclockwise
+counterc counterclockwise
+countercl counterclockwise
+counterclo counterclockwise
+countercloc counterclockwise
+counterclock counterclockwise
+counterclockw counterclockwise
+counterclockwi counterclockwise
+counterclockwis counterclockwise
+
+drop drop
+dr drop
+dro drop
+
+levelup levelup
+lvu levelup
+lvup levelup
+lu levelup
+lup levelup
+levelu levelup
+
+leveldown leveldown
+lvd leveldown
+lvdo leveldown
+lvdow leveldown
+lvdown leveldown
+ld leveldown
+ldo leveldown
+ldow leveldown
+ldown leveldown
+leveld leveldown
+leveldo leveldown
+leveldow leveldown
+
+restart restart
+re restart
+res restart
+rest restart
+resta restart
+restar restart
+

@@ -1,0 +1,46 @@
+TARGET   = quadris
+
+CC       = g++
+# compiling flags here
+CXXFLAGS   =  -Wall -I.
+X11 = -lX11
+NCURSES = -lncurses
+LINKER   = g++ -o $(X11) $(NCURSES)
+# linking flags here
+LFLAGS   = -Wall -I. -lm
+
+
+
+
+
+# change these to set the proper directories where each files shoould be
+SRCDIR   = src
+INCDIR   = inc
+OBJDIR   = obj
+
+
+SOURCES  := $(wildcard $(SRCDIR)/*.cc)
+INCLUDES := $(wildcard $(INCDIR)/*.h)
+OBJECTS  := $(SOURCES:$(SRCDIR)/%.cc=$(OBJDIR)/%.o)
+rm       = rm -f
+
+
+$(TARGET): $(OBJECTS)
+	 @$(LINKER) $@ $(X11) $(NCURSES) $(LFLAGS) $(OBJECTS)
+	 @echo "Linking complete!"
+
+$(OBJECTS): $(OBJDIR)/%.o : $(SRCDIR)/%.cc
+	    @$(CC) $(CFLAGS) -c $< -o $@ 
+	 @echo "Compiled "$<" successfully!"
+
+.PHONEY: clean
+clean:
+	 @$(rm) $(OBJECTS)
+	 @echo "Cleanup complete!"
+
+.PHONEY: remove
+remove: clean
+	    @$(rm) $(TARGET)
+	 @echo "Executable removed!"
+
+
